@@ -10,7 +10,7 @@ const Layout = ({ children }: LayoutProps) => {
     <>
       <div className="bg-white sm:bg-blue-50 max-w-md mx-auto min-w-full max-h-screen">
         <div className="flex justify-center relative">
-          <div className="hidden sm:block w-60 bg-gray-200">hidden test</div>
+          <div className="hidden sm:block w-60 bg-blue-100 opacity-50"></div>
           <div className="max-w-md bg-white w-full h-full px-5">
             <div>{children}</div>
           </div>

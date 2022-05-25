@@ -8,38 +8,39 @@ const Header = () => {
       <header>
         <div className="flex justify-between items-center py-3">
           <Link href="/">
-            <div>
+            <a>
               <Image
                 src="/images/Alarm.svg"
                 alt="alarm"
                 width={24}
                 height={24}
               />
-            </div>
+            </a>
           </Link>
-          <div>
-            <Image
-              src="/images/logo.svg"
-              alt="logo"
-              width={50}
-              height={20}
-              priority={true}
-            />
-          </div>
+          <a>
+            <Image src="/images/logo.svg" alt="logo" width={50} height={20} />
+          </a>
           <div className="flex">
             <Link href="/">
-              <div className="mr-2">
+              <a className="mr-2">
                 <Image
                   src="/images/Search.svg"
                   alt="search"
                   width={24}
                   height={24}
                 />
-              </div>
+              </a>
             </Link>
-            <div>
-              <Image src="/images/Cart.svg" alt="cart" width={24} height={24} />
-            </div>
+            <Link href="/">
+              <a>
+                <Image
+                  src="/images/Cart.svg"
+                  alt="cart"
+                  width={24}
+                  height={24}
+                />
+              </a>
+            </Link>
           </div>
         </div>
       </header>
