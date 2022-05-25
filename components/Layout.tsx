@@ -1,17 +1,17 @@
 import React from 'react';
 import styles from '../styles/AppLayout.module.css';
 
-type AppLayoutProps = {
+type LayoutProps = {
   children: React.ReactNode;
 };
 
-const AppLayout = ({ children }: AppLayoutProps) => {
+const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <div className="bg-white sm:bg-blue-50 max-w-md mx-auto min-w-full max-h-screen">
         <div className="flex justify-center relative">
-          <div className="hidden sm:block w-60 bg-gray-700">hidden test</div>
-          <div className="max-w-md bg-white w-full h-full">
+          <div className="hidden sm:block w-60 bg-gray-200">hidden test</div>
+          <div className="max-w-md bg-white w-full h-full px-5">
             <div>{children}</div>
           </div>
         </div>
@@ -20,4 +20,4 @@ const AppLayout = ({ children }: AppLayoutProps) => {
   );
 };
 
-export default AppLayout;
+export default Layout;
